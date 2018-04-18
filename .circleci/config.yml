@@ -11,8 +11,8 @@ jobs:
       xcode: "9.0"
     steps:
       - checkout
-      - run: bundle update
-      - run: bundle exec fastlane test
+      - run: yes | gem update fastlane
+      - run: fastlane test
 
 workflows:
   version: 2
