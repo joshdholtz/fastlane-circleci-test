@@ -1,0 +1,29 @@
+# .circleci/config.yml
+version: 2
+jobs:
+  build-and-test:
+    macos:
+      xcode: "9.0"
+    steps:
+      ...
+      - run: bundle exec fastlane test
+      ...
+
+  adhoc:
+    macos:
+      xcode: "9.0"
+    steps:
+      ...
+      - run: bundle exec fastlane adhoc
+
+workflows:
+  version: 2
+  build-test-adhoc:
+    jobs:
+      - build-and-test
+      - adhoc:
+          filters:
+            branches:
+              only: development
+          requires:
+            - build-and-test
