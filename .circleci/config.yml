@@ -5,15 +5,12 @@ jobs:
     macos:
       xcode: "9.0"
     steps:
-      ...
       - run: bundle exec fastlane test
-      ...
 
   adhoc:
     macos:
       xcode: "9.0"
     steps:
-      ...
       - run: bundle exec fastlane adhoc
 
 workflows:
