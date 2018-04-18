@@ -13,7 +13,7 @@ jobs:
       - image: circleci/ruby:2.3
     steps:
       - checkout
-      - run: yes | gem update fastlane
+      - run: yes | gem install fastlane -v 2.88.0
       - run: fastlane test
 
 workflows:
