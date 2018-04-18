@@ -10,7 +10,8 @@ jobs:
     macos:
       xcode: "9.0"
     steps:
-      - run: echo "hey"
+      - checkout
+      - run: bundle exec fastlane test
 
 workflows:
   version: 2
