@@ -11,6 +11,7 @@ jobs:
       xcode: "9.0"
     steps:
       - checkout
+      - run: bundle install
       - run: bundle exec fastlane test
 
 workflows:
