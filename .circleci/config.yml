@@ -11,8 +11,14 @@ jobs:
       xcode: "9.0"
     steps:
       - checkout
+      - run:
+          name: Setup Build
+          command: |
+            mkdir -p ~/test-reports
+            echo "2.3" > .ruby-version
+            gem update --system
       - run: yes | gem update fastlane
-      - run: fastlane test
+      # - run: fastlane test
 
 workflows:
   version: 2
