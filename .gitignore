@@ -51,3 +51,5 @@ report.xml
 ionic-configurator-env.json
 config.xml
 GoogleService-Info.plist
+
+gc_keys.json

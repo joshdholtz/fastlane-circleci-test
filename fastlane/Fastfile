@@ -21,10 +21,9 @@ platform :ios do
     match(
       google_cloud_bucket_name: "joshdholtz-match",
       storage_mode: "google_cloud",
-      app_identifier: 'com.joshholtz.FastlaneApp',
+      app_identifier: 'com.joshholtz.circle.Example',
       type: 'appstore',
-      username: 'me@joshholtz.com',
-      readonly: true
+      username: 'me@joshholtz.com'
     )
 
     gym()
