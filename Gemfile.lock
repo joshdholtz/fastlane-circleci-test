@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/fastlane/fastlane.git
-  revision: 04bf9d09110bdc4280a4646caed920243624af89
+  revision: 3a2f3f136a4c8dc00244d8f7e967b367b0ba0998
   branch: joshdholtz-match-import-error-fix
   specs:
     fastlane (2.113.0)
