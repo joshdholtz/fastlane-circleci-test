@@ -11,7 +11,7 @@ jobs:
       xcode: "10.1.0"
     steps:
       - checkout
-      - run: bundle install
+      - run: bundle update fastlane
       - run: echo "$GC_KEYS" > "gc_keys.json"
       - run: bundle exec fastlane build
 
