@@ -26,6 +26,8 @@ platform :ios do
       username: 'me@joshholtz.com'
     )
 
+    sh "security find-identity -v -p codesigning fastlane_tmp_keychain"
+
     gym()
   end
 end
