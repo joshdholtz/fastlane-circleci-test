@@ -15,4 +15,18 @@ platform :ios do
   lane :adhoc do
     puts "test adhoc"
   end
+
+  desc "Runs all the tests"
+  lane :build do
+    match(
+      google_cloud_bucket_name: "joshdholtz-match",
+      storage_mode: "google_cloud",
+      app_identifier: 'com.joshholtz.FastlaneApp',
+      type: 'appstore',
+      username: 'me@joshholtz.com',
+      readonly: true
+    )
+
+    gym()
+  end
 end

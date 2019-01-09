@@ -14,7 +14,8 @@ jobs:
     steps:
       - checkout
       - run: gem install fastlane -v 2.88.0
-      - run: fastlane test
+      - run: echo "$GC_KEYS" > "gc_eys.json"
+      - run: fastlane build
 
 workflows:
   version: 2
