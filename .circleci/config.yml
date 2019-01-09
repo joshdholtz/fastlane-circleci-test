@@ -13,7 +13,7 @@ jobs:
       - checkout
       - run: bundle update fastlane
       - run: echo "$GC_KEYS" > "gc_keys.json"
-      - run: bundle exec fastlane build
+      - run: bundle exec fastlane build --verbose
 
 workflows:
   version: 2
