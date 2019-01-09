@@ -14,7 +14,7 @@ jobs:
     steps:
       - checkout
       - run: bundle install
-      - run: echo "$GC_KEYS" > "gc_eys.json"
+      - run: echo "$GC_KEYS" > "gc_keys.json"
       - run: fastlane build
 
 workflows:
