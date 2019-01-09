@@ -10,7 +10,7 @@ jobs:
     macos:
       xcode: "9.0"
     docker:
-      - image: circleci/ruby:2.0
+      - image: circleci/ruby:latest
     steps:
       - checkout
       - run: gem install fastlane -v 2.88.0
